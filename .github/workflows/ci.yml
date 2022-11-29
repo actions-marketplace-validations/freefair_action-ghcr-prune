@@ -13,11 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
 
-      - name: Setup NodeJS 14
+      - name: Setup NodeJS 16
         uses: actions/setup-node@v2.3.2
         with:
-          node-version: '14.x'
-          cache: 'npm'
+          node-version: '16.x'
 
       - name: Install deps
         run: npm ci
