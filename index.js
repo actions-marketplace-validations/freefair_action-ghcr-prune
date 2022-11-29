@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const {getPruningList} = require('./src/pruning');
 
-const MS_IN_DAY = 86_400_000; // 86400 sec / p. d.
+const MS_IN_DAY = 86400000; // 86400 sec / p. d.
 
 const asBoolean = (v) => 'true' == String(v);
 
